@@ -1,0 +1,385 @@
+/* import font */
+
+@font-face {
+    font-family: Raleway;
+    src: url(https://fonts.google.com/specimen/Raleway);
+}
+
+/* color */
+
+.blue{
+    color: #0065FC;
+}
+
+.grey{
+    color: #F2F2F2;
+}
+/* font */
+
+.font30{
+    font-size: 90%;
+    font-family:Raleway ;
+    text-decoration: none;
+}
+.font20{
+    font-size: 75%;
+    font-weight: 100;
+    color: gray;
+    text-decoration: none;
+}
+.font10{
+    font-size: 90%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* maj body */
+body{
+    margin: 50px;
+    font-family: Raleway;
+    font-size: 20px;
+}
+
+/* header nav */
+.logoNav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    align-self: center;
+}
+.logo img{
+    width: 50%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+}
+
+.lien a{
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    height: 100%;
+}
+
+.lien a:hover{
+    color:#0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+/* header slogan */
+.slogan{
+    margin-bottom: 30px;
+}
+.marginSlogan{
+    margin-bottom: 0px;
+}
+
+/* header form */
+.input{
+    display: flex;
+    align-items: center;
+    border: 3px solid #F2F2F2;
+    block-size: 40px;
+    width: 25%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.input i{
+    height: 100%;
+    background-color: #F2F2F2;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px 0 0 13px;
+}
+.input input{
+    width: 70%;
+    height: 100%;
+    border: none;
+
+    padding-left: 2%;
+    font-weight: bolder;
+    font-family: Raleway;
+}
+
+.input button{
+    color: white;
+    height: 100%;
+    background-color: #0065FC;
+    border-radius: 0 13px 13px 0;
+
+}
+
+/* filter */
+.filter{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+.filter a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter a :hover{
+    color: #0065FC;
+}
+.filter .icon{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 15px;
+    color: #0065FC;
+    font-size: 20px;
+
+}
+.iconDescript{
+    padding: 0 10px 0 10px;
+}
+
+.info{
+    display: flex;
+    align-items: baseline;
+}
+.info .fas{
+    padding: 10px;
+    border: 3px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 68%;
+    color: #0065FC;
+}
+
+
+
+
+main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hebergement-populaire{
+    display: flex;
+    justify-content: space-between;
+}
+/* card  hebergement */
+
+.hebergement{
+    padding: 3% 2% 3% 2%;
+    width: 58%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+
+.multi-card-hebergement{
+    display:flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+
+  .card-hebergement{
+    width:205px;
+    height: 170px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 10%;
+    padding: 4px;
+  }
+
+  .card-hebergement a{
+    text-decoration: none;
+  }
+
+  .card-hebergement-image{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+  }
+  .card-hebergement-image img{
+    width: 99%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+
+  .card-hebergement-body{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0 0 7px;
+    justify-content: space-around;
+    height: 30%;
+  }
+
+  /* card populaire */
+
+.populaire{
+    width: 28%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 3% 2% 3% 2%;
+}
+.title-populaire{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-populaire{
+    width:90%;
+    height: 130px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px;
+    padding: 4px;
+    display: flex;
+  }
+
+  .card-populaire a{
+    text-decoration: none;
+    display: flex;
+  }
+
+  .card-populaire-image{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .card-populaire-image img{
+    width: 99%;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+  }
+
+  .card-populaire-body{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0 0 7px;
+    justify-content: space-around;
+    width: 60%;
+  }
+
+/* card activité */
+
+.activite{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    flex-direction: column;
+}
+.title-activite{
+padding: 3% 2% 3% 2%;
+}
+
+.multi-card-activite{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+/* card activité 1 */
+.card-activite1{
+    width:25%;
+    height: 400px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px;
+}
+
+.card-activite1 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 99%;
+  }
+
+  .card-activite-image{
+    display: flex;
+    justify-content: center;
+    height: 85%;
+  }
+
+  .card-activite-image img{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+    object-fit: cover;
+  }
+
+  .card-activite-body{
+    padding: 7px 0 0 7px;
+    height: 10%;
+  }
+
+  /* card activité 2 */
+  .card-activite-flex-column{
+    width: 25%;
+    margin: 0 25px 0 25px;
+  }
+
+  .card-activite2{
+    /* width:260px; */
+    height: 190px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px;
+}
+
+.card-activite2 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 99%;
+  }
+
+  .card-activite-image2{
+    display: flex;
+    justify-content: center;
+    height: 65%;
+  }
+
+  .card-activite-image2 img{
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+    object-fit: cover;
+  }
+
+  .card-activite-body2{
+    padding: 7px 0 0 7px;
+    height: 20%;
+  }
+
+  /* footer */
+
+  .footer{
+    background-color: #F2F2F2;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+  }
